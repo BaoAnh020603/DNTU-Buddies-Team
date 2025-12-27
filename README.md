@@ -130,7 +130,7 @@ git branch -M main
    
    **Kết quả:**
    ```
-   mongodb+srv://dntuadmin:Abc123XyzDef456Ghi789@dntu-buddies-team.xxxxx.mongodb.net/dntu-buddies-team?retryWrites=true&w=majority
+   mongodb+srv://dntuadmin:<YOUR_PASSWORD_HERE>@dntu-buddies-team.xxxxx.mongodb.net/dntu-buddies-team?retryWrites=true&w=majority
    ```
 
 8. **⚠️ LƯU LẠI CONNECTION STRING NÀY VÀO NOTEPAD!**
@@ -149,7 +149,7 @@ git branch -M main
    # MONGODB_URI=mongodb://localhost:27017/dntu-buddies
    
    # Production (temporary for migration)
-   MONGODB_URI=mongodb+srv://dntuadmin:Abc123XyzDef456Ghi789@dntu-buddies-team.xxxxx.mongodb.net/dntu-buddies-team?retryWrites=true&w=majority
+   MONGODB_URI=mongodb+srv://dntuadmin:<YOUR_PASSWORD>@dntu-buddies-team.xxxxx.mongodb.net/dntu-buddies-team?retryWrites=true&w=majority
    ```
 
 3. **Lưu file**
@@ -192,7 +192,7 @@ npm run seed
    MONGODB_URI=mongodb://localhost:27017/dntu-buddies
    
    # Production (đã migrate xong)
-   # MONGODB_URI=mongodb+srv://dntuadmin:Abc123XyzDef456Ghi789@...
+   # MONGODB_URI=mongodb+srv://dntuadmin:<YOUR_PASSWORD>@...
    ```
 
 3. **Lưu file**
@@ -322,9 +322,9 @@ PORT = 10000
 ```
 
 ```
-MONGODB_URI = mongodb+srv://dntuadmin:Abc123XyzDef456Ghi789@dntu-buddies-team.xxxxx.mongodb.net/dntu-buddies-team?retryWrites=true&w=majority
+MONGODB_URI = mongodb+srv://dntuadmin:<YOUR_PASSWORD>@dntu-buddies-team.xxxxx.mongodb.net/dntu-buddies-team?retryWrites=true&w=majority
 ```
-⚠️ Paste connection string từ bước 2.6!
+⚠️ Paste connection string từ bước 2.6 (thay <YOUR_PASSWORD> bằng password thật)!
 
 ```
 JWT_SECRET = dntu-buddies-team-super-secret-jwt-key-production-2024-change-this-to-random-string
