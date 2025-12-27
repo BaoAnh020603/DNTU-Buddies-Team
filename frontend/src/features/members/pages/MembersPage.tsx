@@ -50,7 +50,9 @@ export default function MembersPage() {
         try {
             setLoading(true)
             const data = await memberService.getAllMembers()
-            setMembers(data.members || data)
+            // Fix type: data is MemberResponse, extract members array
+            const membersArray = Array.isArray(data) ? data : data.members
+            setMembers(membersArray)
         } catch (error) {
             console.error('Error fetching members:', error)
         } finally {
