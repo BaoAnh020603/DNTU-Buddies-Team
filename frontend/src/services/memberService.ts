@@ -1,5 +1,5 @@
 import axiosInstance from './axiosInstance'
-import { Member, MemberResponse, MemberStats } from '../types/member'
+import type { Member, MemberResponse, MemberStats } from '../types/member'
 
 export const memberService = {
     // Lấy tất cả thành viên

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { memberService } from '../../../services/memberService'
-import { Member, MemberStats } from '../../../types/member'
+import type { Member, MemberStats } from '../../../types/member'
 import { Plus, Edit, Trash2, Users, UserCheck, UserX } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Member } from '../../../types/member'
+import type { Member } from '../../../types/member'
 import { Github, Linkedin, Facebook, Instagram, Mail } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
