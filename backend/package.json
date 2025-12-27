@@ -1,0 +1,39 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "DNTU Buddies Team Backend API",
+    "license": "ISC",
+    "author": "",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon index.js",
+        "start": "node index.js",
+        "seed": "node scripts/seedMembers.js",
+        "create-member": "node scripts/createMember.js",
+        "create-member-admin": "node scripts/createMemberAdmin.js",
+        "create-multiple-members": "node scripts/createMultipleMembers.js"
+    },
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "cloudinary": "^2.8.0",
+        "compression": "^1.8.1",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.2",
+        "express": "^5.1.0",
+        "express-session": "^1.18.2",
+        "express-validator": "^7.2.1",
+        "googleapis": "^161.0.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.18.2",
+        "morgan": "^1.10.1",
+        "multer": "^2.0.2",
+        "nodemailer": "^7.0.6",
+        "nodemon": "^3.1.10",
+        "sharp": "^0.34.5",
+        "slugify": "^1.6.6",
+        "streamifier": "^0.1.1",
+        "validator": "^13.15.15"
+    }
+}

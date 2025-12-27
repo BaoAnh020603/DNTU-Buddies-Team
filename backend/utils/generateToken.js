@@ -1,0 +1,25 @@
+const jwt = require('jsonwebtoken')
+
+// Tạo Access Token (hết hạn sau 15 phút)
+const generateAccessToken = (userId, role = 'user') => {
+    return jwt.sign(
+        {
+            id: userId,
+            userId: userId, // Để tương thích với middleware
+            role: role,
+        },
+        process.env.ACCESS_TOKEN_SECRET,
+        {
+            expiresIn: '30d', // hạn 30 ngày
+        }
+    )
+}
+
+// Tạo Refresh Token (hết hạn sau 7 ngày)
+const generateRefreshToken = (userId) => {
+    return jwt.sign({ userId: userId }, process.env.REFRESH_TOKEN_SECRET, {
+        expiresIn: '30d',
+    })
+}
+
+module.exports = { generateAccessToken, generateRefreshToken }
