@@ -66,6 +66,7 @@ const members = [
     'Phạm Anh Thuỳ',
     'Trần Bình Nhật Nam',
     'Phạm Thái Thiên Kim',
+    'Nguyễn Nhật Bảo Anh',
 ]
 
 const createMultipleMembers = async () => {
