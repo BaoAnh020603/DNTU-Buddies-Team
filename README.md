@@ -274,8 +274,6 @@ Website đã được deploy lên production:
 - **Backend:** Render - [https://dntu-buddies-team.onrender.com](https://dntu-buddies-team.onrender.com)
 - **Database:** MongoDB Atlas
 
-📖 **Chi tiết:** Xem [HUONG_DAN_DEPLOY_CHI_TIET.md](./HUONG_DAN_DEPLOY_CHI_TIET.md)
-
 ---
 
 ## 🤝 Đóng Góp
