@@ -111,11 +111,11 @@ export const useLazyImage = (src: string) => {
 // Hook for debounced window resize
 export const useDebounceResize = (callback: () => void, delay: number = 250) => {
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout
+    let timeoutId: number
 
     const handleResize = () => {
       clearTimeout(timeoutId)
-      timeoutId = setTimeout(callback, delay)
+      timeoutId = window.setTimeout(callback, delay)
     }
 
     window.addEventListener('resize', handleResize)

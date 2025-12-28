@@ -99,7 +99,7 @@ export const throttle = <T extends (...args: any[]) => any>(
   func: T,
   delay: number
 ): ((...args: Parameters<T>) => void) => {
-  let timeoutId: NodeJS.Timeout | null = null
+  let timeoutId: number | null = null
   let lastExecTime = 0
 
   return (...args: Parameters<T>) => {
@@ -109,7 +109,7 @@ export const throttle = <T extends (...args: any[]) => any>(
       if (timeoutId) {
         clearTimeout(timeoutId)
       }
-      timeoutId = setTimeout(() => {
+      timeoutId = window.setTimeout(() => {
         lastExecTime = currentTime
         func(...args)
       }, delay)
@@ -125,13 +125,13 @@ export const debounce = <T extends (...args: any[]) => any>(
   func: T,
   delay: number
 ): ((...args: Parameters<T>) => void) => {
-  let timeoutId: NodeJS.Timeout | null = null
+  let timeoutId: number | null = null
 
   return (...args: Parameters<T>) => {
     if (timeoutId) {
       clearTimeout(timeoutId)
     }
-    timeoutId = setTimeout(() => {
+    timeoutId = window.setTimeout(() => {
       func(...args)
     }, delay)
   }
