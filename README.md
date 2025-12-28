@@ -8,7 +8,7 @@
 
 **Website quản lý thành viên chính thức của CLB DNTU Buddies Team**
 
-[🌐 Website](https://dntu-buddies-team.vercel.app) • [📖 Documentation](./HUONG_DAN_DEPLOY_CHI_TIET.md) • [🐛 Report Bug](https://github.com/BaoAnh020603/DNTU-Buddies-Team/issues)
+[🌐 Website](https://dntu-buddies-team.vercel.app)
 
 </div>
 
@@ -27,13 +27,6 @@ Website được xây dựng với giao diện 3D ấn tượng, giúp các thà
 
 ---
 
-## 🚀 Demo
-
-**🌐 Production:** [https://dntu-buddies-team.vercel.app](https://dntu-buddies-team.vercel.app)
-
-**🔐 Tài khoản demo:**
-- Email: `admin@dntubuddiesteam.com`
-- Password: `admin123`
 
 ---
 
@@ -277,15 +270,6 @@ GET    /api/members/stats     # Lấy thống kê
 
 ## 👥 Thành Viên
 
-Hệ thống hiện có **37 thành viên** đã đăng ký:
-
-1. Đinh Thị Hải Anh
-2. Lê Hoàng Yến Nhi
-3. Trần Quang Linh
-4. Cấn Lê Thủy Tiên
-5. Hồ Thị Mỹ Duyên
-... và 32 thành viên khác
-
 📧 **Format email:** `[tên không dấu]@dntubuddiesteam.com`  
 🔑 **Format password:** `[tên không dấu]123`
 
@@ -315,20 +299,18 @@ npm run lint           # Lint code
 
 Website đã được deploy lên production:
 
-- **Frontend:** Vercel - [https://dntu-buddies-team.vercel.app](https://dntu-buddies-team.vercel.app)
-- **Backend:** Render - [https://dntu-buddies-team.onrender.com](https://dntu-buddies-team.onrender.com)
+- **Frontend:** Vercel
+- **Backend:** Render
 - **Database:** MongoDB Atlas
-
-📖 **Chi tiết:** Xem [HUONG_DAN_DEPLOY_CHI_TIET.md](./HUONG_DAN_DEPLOY_CHI_TIET.md)
 
 ---
 
 ## 🤝 Đóng Góp
 
-Dự án này được phát triển và duy trì bởi DNTU Buddies Team.
+Dự án này được phát triển và duy trì bởi Nguyễn Nhật Bảo Anh
 
 **Liên hệ:**
-- 📧 Email: admin@dntubuddiesteam.com
+- 📧 Email: baoanh020603@gmail.com
 - 🌐 Website: https://dntu-buddies-team.vercel.app
 
 ---
@@ -345,12 +327,10 @@ Dự án này là tài sản riêng của CLB DNTU Buddies Team và chỉ dành 
 
 Cảm ơn tất cả các thành viên DNTU Buddies Team đã đóng góp và sử dụng hệ thống!
 
-**Made with 💙 by DNTU Buddies Team**
-
 ---
 
 <div align="center">
 
-### 🌟 Nếu bạn thích project này, hãy cho chúng tôi một ⭐!
+### 🌟 Nếu bạn thích project này, hãy cho một ⭐!
 
 </div>
