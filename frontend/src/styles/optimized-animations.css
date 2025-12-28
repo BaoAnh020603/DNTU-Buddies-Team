@@ -1,0 +1,184 @@
+/* Optimized animations for better performance */
+
+/* Use will-change sparingly - only on elements that will animate */
+.will-animate {
+  will-change: transform, opacity;
+}
+
+/* Remove will-change after animation completes */
+.animation-complete {
+  will-change: auto;
+}
+
+/* Hardware-accelerated transforms */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Optimize blur effects - use sparingly */
+.optimized-blur {
+  filter: blur(8px);
+  /* Use backdrop-filter instead of filter when possible */
+}
+
+.optimized-backdrop-blur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Disable blur on low-end devices */
+@media (max-width: 768px) {
+  .mobile-no-blur {
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+
+/* Optimize shadows */
+.optimized-shadow {
+  box-shadow: 0 10px 30px rgba(0, 114, 206, 0.2);
+}
+
+.optimized-shadow-hover:hover {
+  box-shadow: 0 15px 40px rgba(0, 114, 206, 0.3);
+}
+
+/* Use transform instead of top/left for animations */
+.smooth-transform {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Optimize gradient animations */
+.animated-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 5s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Optimize loading states */
+.skeleton-loading {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 114, 206, 0.1) 25%,
+    rgba(0, 160, 220, 0.2) 50%,
+    rgba(0, 114, 206, 0.1) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Optimize hover effects */
+.hover-lift {
+  transition: transform 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Optimize scale animations */
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Contain layout shifts */
+.contain-layout {
+  contain: layout style paint;
+}
+
+/* Optimize images */
+.optimized-image {
+  content-visibility: auto;
+  contain-intrinsic-size: 300px;
+}
+
+/* Lazy load images */
+.lazy-image {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* Optimize text rendering */
+.optimized-text {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduce paint areas */
+.isolate-paint {
+  isolation: isolate;
+}
+
+/* Optimize scrolling */
+.smooth-scroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Optimize for mobile */
+@media (max-width: 768px) {
+  /* Reduce animation complexity on mobile */
+  .complex-animation {
+    animation: none !important;
+  }
+  
+  /* Simplify transforms on mobile */
+  .mobile-simple-transform {
+    transform: none !important;
+  }
+  
+  /* Disable 3D transforms on mobile */
+  .mobile-no-3d {
+    transform-style: flat !important;
+    perspective: none !important;
+  }
+}
+
+/* Performance hints */
+.performance-hint {
+  /* Use contain for better performance */
+  contain: layout style paint;
+  /* Use content-visibility for off-screen content */
+  content-visibility: auto;
+}
