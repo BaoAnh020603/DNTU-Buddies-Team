@@ -8,14 +8,13 @@
 
 **Website quản lý thành viên chính thức của CLB DNTU Buddies Team**
 
-[🌐 Website](https://dntu-buddies-team.vercel.app)
 </div>
 
 ---
 
 ## 📋 Giới Thiệu
 
-**DNTU Buddies Team** là hệ thống quản lý thành viên hiện đại dành cho CLB DNTU Buddies Team - nơi kết nối sinh viên Việt Nam và bạn bè quốc tế tại Đại học Đà Nẵng.
+**DNTU Buddies Team** là hệ thống quản lý thành viên hiện đại dành cho CLB DNTU Buddies Team - nơi kết nối sinh viên Việt Nam và bạn bè quốc tế tại Đại học Công Nghệ Đồng Nai
 
 Website được xây dựng với giao diện 3D ấn tượng, giúp các thành viên:
 - ✨ Tạo và quản lý profile cá nhân với hiệu ứng 3D
@@ -25,14 +24,6 @@ Website được xây dựng với giao diện 3D ấn tượng, giúp các thà
 - 📊 Theo dõi hoạt động và thành tích trong CLB
 
 ---
-
-## 🚀 Demo
-
-**🌐 Production:** [https://dntu-buddies-team.vercel.app](https://dntu-buddies-team.vercel.app)
-
-**🔐 Tài khoản demo:**
-- Email: `admin@dntubuddiesteam.com`
-- Password: `admin123`
 
 ---
 
@@ -233,12 +224,6 @@ GET    /api/members/stats     # Lấy thống kê
 
 Hệ thống hiện có **37 thành viên** đã đăng ký:
 
-1. Đinh Thị Hải Anh
-2. Lê Hoàng Yến Nhi
-3. Trần Quang Linh
-4. Cấn Lê Thủy Tiên
-5. Hồ Thị Mỹ Duyên
-... và 32 thành viên khác
 
 📧 **Format email:** `[tên không dấu]@dntubuddiesteam.com`  
 🔑 **Format password:** `[tên không dấu]123`
@@ -269,8 +254,8 @@ npm run lint           # Lint code
 
 Website đã được deploy lên production:
 
-- **Frontend:** Vercel - [https://dntu-buddies-team.vercel.app](https://dntu-buddies-team.vercel.app)
-- **Backend:** Render - [https://dntu-buddies-team.onrender.com](https://dntu-buddies-team.onrender.com)
+- **Frontend:** Vercel
+- **Backend:** Render
 - **Database:** MongoDB Atlas
 
 ---
@@ -280,8 +265,7 @@ Website đã được deploy lên production:
 Dự án này được phát triển và duy trì bởi Bảo Anh
 
 **Liên hệ:**
-- 📧 Email: admin@dntubuddiesteam.com
-- 🌐 Website: https://dntu-buddies-team.vercel.app
+- 📧 Email: baoanh020603@gmail.com
 
 ---
 
