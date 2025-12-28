@@ -8,8 +8,7 @@
 
 **Website quản lý thành viên chính thức của CLB DNTU Buddies Team**
 
-[🌐 Website](https://dntu-buddies-team.vercel.app) • [📖 Documentation](./HUONG_DAN_DEPLOY_CHI_TIET.md) • [🐛 Report Bug](https://github.com/BaoAnh020603/DNTU-Buddies-Team/issues)
-
+[🌐 Website](https://dntu-buddies-team.vercel.app)
 </div>
 
 ---
