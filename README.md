@@ -16,7 +16,7 @@
 
 ## 📋 Giới Thiệu
 
-**DNTU Buddies Team** là hệ thống quản lý thành viên hiện đại dành cho CLB DNTU Buddies Team - nơi kết nối sinh viên Việt Nam và bạn bè quốc tế tại Đại học Đà Nẵng.
+**DNTU Buddies Team** là hệ thống quản lý thành viên hiện đại dành cho CLB DNTU Buddies Team - nơi kết nối sinh viên Việt Nam và bạn bè quốc tế tại Đại học Công Nghệ Đồng Nai
 
 Website được xây dựng với giao diện 3D ấn tượng, giúp các thành viên:
 - ✨ Tạo và quản lý profile cá nhân với hiệu ứng 3D
