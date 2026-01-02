@@ -15,4 +15,7 @@ router.use('/profile', require('./profile.router'))
 // Members routes (Public & Admin)
 router.use('/members', require('./member.router'))
 
+// Gallery routes (Public & Authenticated)
+router.use('/gallery', require('./gallery.router'))
+
 module.exports = router

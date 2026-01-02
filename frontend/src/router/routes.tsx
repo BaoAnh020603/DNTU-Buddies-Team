@@ -12,6 +12,7 @@ const MemberDetailPage = lazy(() => import('../features/members/pages/MemberDeta
 const AdminDashboard = lazy(() => import('../features/admin/pages/AdminDashboard'))
 const MemberFormPage = lazy(() => import('../features/admin/pages/MemberFormPage'))
 const ProfilePage = lazy(() => import('../features/profile/ProfilePage'))
+const GalleryPage = lazy(() => import('../features/gallery/pages/GalleryPage'))
 const NotFound = lazy(() => import('../features/not-found/NotFound'))
 
 export const routes: RouteObject[] = [
@@ -38,6 +39,10 @@ export const routes: RouteObject[] = [
                     {
                         path: 'profile',
                         element: <ProfilePage />,
+                    },
+                    {
+                        path: 'gallery',
+                        element: <GalleryPage />,
                     },
                     {
                         path: 'admin',
