@@ -287,7 +287,6 @@ export default function HomePage() {
                                 <span className="relative z-10">Đăng nhập</span>
                             </motion.button>
                         </div>
-                        </motion.button>
                     )}
                 </motion.div>
 
