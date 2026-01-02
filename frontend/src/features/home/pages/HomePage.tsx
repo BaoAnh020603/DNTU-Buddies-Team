@@ -256,19 +256,37 @@ export default function HomePage() {
                             </motion.button>
                         </div>
                     ) : (
-                        <motion.button 
-                            onClick={() => navigate('/auth')} 
-                            whileHover={{ scale: 1.05, y: -3 }} 
-                            whileTap={{ scale: 0.95 }}
-                            className="px-8 py-4 bg-gradient-to-r from-[#0072CE] to-[#00A0DC] hover:from-[#005BA8] hover:to-[#0088BB] text-white rounded-2xl font-bold text-lg transition-all duration-300 relative overflow-hidden"
-                            style={{ boxShadow: '0 10px 30px rgba(0, 114, 206, 0.4)' }}
-                        >
-                            <motion.div
-                                animate={{ x: ['-100%', '200%'] }}
-                                transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
-                                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"
-                            />
-                            <span className="relative z-10">Đăng nhập</span>
+                        <div className="flex items-center gap-3">
+                            <motion.button 
+                                onClick={() => navigate('/gallery')} 
+                                whileHover={{ scale: 1.05, y: -3 }} 
+                                whileTap={{ scale: 0.95 }}
+                                className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-2xl font-bold transition-all duration-300 relative overflow-hidden flex items-center gap-2"
+                                style={{ boxShadow: '0 10px 30px rgba(168, 85, 247, 0.4)' }}
+                            >
+                                <motion.div
+                                    animate={{ x: ['-100%', '200%'] }}
+                                    transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+                                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"
+                                />
+                                <ImageIcon size={20} className="relative z-10" />
+                                <span className="relative z-10">Kho ảnh</span>
+                            </motion.button>
+                            <motion.button 
+                                onClick={() => navigate('/auth')} 
+                                whileHover={{ scale: 1.05, y: -3 }} 
+                                whileTap={{ scale: 0.95 }}
+                                className="px-8 py-4 bg-gradient-to-r from-[#0072CE] to-[#00A0DC] hover:from-[#005BA8] hover:to-[#0088BB] text-white rounded-2xl font-bold text-lg transition-all duration-300 relative overflow-hidden"
+                                style={{ boxShadow: '0 10px 30px rgba(0, 114, 206, 0.4)' }}
+                            >
+                                <motion.div
+                                    animate={{ x: ['-100%', '200%'] }}
+                                    transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+                                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"
+                                />
+                                <span className="relative z-10">Đăng nhập</span>
+                            </motion.button>
+                        </div>
                         </motion.button>
                     )}
                 </motion.div>
